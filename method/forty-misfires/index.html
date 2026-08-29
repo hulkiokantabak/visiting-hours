@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forty misfires · Visiting Hours</title>
+<link rel="stylesheet" href="../../site.css">
+<link rel="alternate" hreflang="tr" href="../../tr/method/forty-misfires/">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the text</a>
+<nav class="topnav" aria-label="Visiting Hours">
+<a class="brand" href="../../">Visiting Hours</a>
+<ul>
+<li><a href="../../read/">Read</a></li>
+<li><a href="../../guide/">Guide</a></li>
+<li><a href="../../method/" aria-current="true">Method</a></li>
+<li><a href="../../about/">About</a></li>
+</ul>
+<a class="switch" href="../../tr/method/forty-misfires/" lang="tr" hreflang="tr">TÜRKÇE</a>
+</nav>
+<main id="content">
+<p class="faint">Vitrine V</p>
+<h1>Forty misfires</h1>
+<p class="quiet">A project that hides its instrument failures has an instrument problem it cannot see. Every misfire in this project is numbered in one file, with what it claimed, what was true, and what believing it would have cost.</p>
+<h2>The criterion</h2>
+<p>Published in the register itself, so the count can be recounted by another hand:</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>a misfire is a defect in a thing that MEASURES MECHANICALLY</strong> — a script, a regex, a limb, a parser, a matcher, a converter, a harness, a band, or a written method that governs one — <strong>and it is filed when the instrument returned a verdict, or a silence, the artefact does not support.</strong></p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md</p></blockquote>
+<h2>What came back</h2>
+<dl class="facts">
+<dt>Numbered rows in the register</dt><dd>82</dd>
+<dt>Rows belonging to the Turkish stage</dt><dd>40 — V-43 to V-82</dd>
+<dt>Blind — a limb that could not reach material it was armed to read, returning a silence indistinguishable from a clean result</dt><dd>22</dd>
+<dt>False alarms — a limb that reached its material and convicted text that was correct</dt><dd>13</dd>
+<dt>Broken — a limb that crashed, destroyed, or ran on the wrong state</dt><dd>5</dd>
+<dt>Of the blind, blind to text that was already right</dt><dd>20 of 22. The register names the other 2, and they are the 2 that mattered: V-64 · V-76</dd>
+</dl>
+<p class="faint">The classification is by eye, one ruling for each of the forty, and the rows of each class are named in the register so the count can be recounted rather than believed. This page reads those names; the three sets are asserted disjoint and asserted to cover the stage exactly, and the build stops if the enumeration and the table ever disagree.</p>
+<h2>Three of the rows</h2>
+<p class="faint">Lifted from the register at this build, not transcribed.</p>
+<h3>V-67</h3>
+<p>The check — <span lang="en">the hard-rule scanner, <code>CAUSAL_MORPH</code></span></p>
+<p>It reported — <span lang="en">27 hypotheses, the standing report of the limb guarding the book’s oldest law</span></p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>BLIND TO BACK-VOWEL TURKISH.</strong> The ablative hard-coded the FRONT-vowel «nden», so every «…dığından / …duğundan» was unmatchable <strong>at every run since the limb was armed</strong> — 5 sites in 4 files. Confirming it, the chair found a SECOND vowel hole in the same list: the future participle hard-coded the BACK-vowel «acağı», so «…eceği için» was unmatchable too (census 0)</p><p class="faint" style="margin:0.45rem 0 0">the truth, docs/VERIFIER-LOG.md</p></blockquote>
+<p class="faint" lang="en">five sites of the book’s most absolute rule outside the scan for the whole stage. <strong>All nine newly-visible sites were then censused and ALL NINE ACQUIT</strong> — the ablatives are comparatives or the complement of «emin ol-». The scan reports 27 → 36 and the tree stays GREEN: <strong>the instrument was blind and what it was blind to was innocent, which nobody could have known, and which is the whole reason a blind limb is not a clean one</strong></p>
+<h3>V-71</h3>
+<p>The check — <span lang="en"><code>map_rows()</code>, which hands each verifier the rows for its piece</span></p>
+<p>It reported — <span lang="en">the EPILOGUE’s rows</span></p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>it matched on <code>did[3:]</code> — the slot digits of a <code>DS-###</code> id, but the string <code>LOGUE</code> for BOTH PROLOGUE AND EPILOGUE.</strong> <code>LOGUE:</code> matched every <code>PROLOGUE:</code> home, so <strong>the two forms were reading each other’s rows: four of the six the EPILOGUE’s brief printed named PROLOGUE, and the map names EPILOGUE nowhere at all</strong></p><p class="faint" style="margin:0.45rem 0 0">the truth, docs/VERIFIER-LOG.md</p></blockquote>
+<p class="faint" lang="en">the book’s last page verified against another page’s rows, at the one element after which nothing may be printed in any edition. Found by the EPILOGUE’s own verifier, <strong>again by reading the SLICING and not the output.</strong> The numeric shorthand is now used only where the id is numeric</p>
+<h3>V-79</h3>
+<p>The check — <span lang="en"><code>ast.parse</code>, verifying the checker after a patch</span></p>
+<p>It reported — <span lang="en">SYNTAX OK</span></p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>the file was zero bytes.</strong> <code>open(p,'w')</code> had truncated the checker before the expression that raised, and an empty file parses</p><p class="faint" style="margin:0.45rem 0 0">the truth, docs/VERIFIER-LOG.md</p></blockquote>
+<p class="faint" lang="en">the instrument the whole stage measures with, emptied and then certified sound. Restored from the last commit; the patch now builds and validates the whole string BEFORE any file is opened, writes to a temp and <code>os.replace</code>s. <strong>The day’s law a third time, and the third victim was the verifier of the fix</strong> (catch C-101)</p>
+<p class="quiet">The two the register names are the two the classification exists for: a limb blind to whether anything had been read at all, and a limb that could only see a thing being added and never a thing being taken away.</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0">the two that were not are the two that matter: the verification-status marker (V-64), blind to whether anything had been read at all, and the ink it exposed carried six blockers at Part V; and register C-24’s one-way limb (V-76), blind to anthropomorphism removed, where the audit that finally looked found eight subtractions with five of them in one shape.</p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md</p></blockquote>
+<h2>The standing lesson</h2>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>AND THIS IS THE STAGE’S OWN STANDING LESSON, filed here because the misfire ledger is where it belongs: NOT ONE of the blind limbs was found by reading the corpus. Every one was found by reading the PATTERN</strong> — the regex, the slice, the open call, the vowel table — <strong>because a limb that cannot fire is indistinguishable from a limb with nothing to report, and the corpus is exactly where that difference is invisible.</strong></p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md</p></blockquote>
+<h2>The number a register may not get wrong</h2>
+<p>Five counts of this stage’s misfires stand in the tree: four, five, six, seven, and the forty above. The first four are not wrong. They are answers to smaller questions, each honest at its own sitting — one counts only the project’s own record faults and stops in the second week of August, two others count a single week’s instrument repairs.</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>Not one of the first four carries a criterion.</strong> <strong>The number a register may not get wrong is its own, and the way it gets it wrong is by never saying what it counts.</strong></p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md</p></blockquote>
+<p class="quiet">The stage’s own block still reads four and is left exactly as written, with the correction filed beside it rather than over it. A dated record standing under a superseded boundary is kept, not corrected.</p>
+<hr>
+<p class="faint" style="display:flex;flex-wrap:wrap;gap:0.4rem 1.6rem"><a href="../../method/the-ratio/">Previous · IV</a>
+<a href="../../method/">The pavilion</a>
+<a href="../../method/the-census/">VI · Next</a></p>
+</main>
+<div class="foot"><p>Copyright © 2026 Hulki Okan Tabak. All rights reserved.</p></div>
+</body>
+</html>

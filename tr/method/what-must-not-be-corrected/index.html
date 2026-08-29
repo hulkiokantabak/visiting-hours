@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Düzeltilmemesi gerekenler · Ziyaret Saatleri</title>
+<link rel="stylesheet" href="../../../site.css">
+<link rel="alternate" hreflang="en" href="../../../method/what-must-not-be-corrected/">
+</head>
+<body>
+<a class="skip" href="#content">Metne geç</a>
+<nav class="topnav" aria-label="Ziyaret Saatleri">
+<a class="brand" href="../../../">Ziyaret Saatleri</a>
+<ul>
+<li><a href="../../../tr/read/">Oku</a></li>
+<li><a href="../../../guide/" hreflang="en">Rehber</a></li>
+<li><a href="../../../tr/method/" aria-current="true">Yöntem</a></li>
+<li><a href="../../../tr/about/">Hakkında</a></li>
+</ul>
+<a class="switch" href="../../../method/what-must-not-be-corrected/" lang="en" hreflang="en">ENGLISH</a>
+</nav>
+<main id="content">
+<p class="faint">Vitrin III</p>
+<h1>Düzeltilmemesi gerekenler</h1>
+<p class="quiet">Bir düzeltmen, bir dizgici, bir editör ya da sonraki bir el bu kitapta bir dizi şeyle karşılaşıp kaleme uzanacak. Bunların her biri kasıtlı. Sormayacak olan elin, elini oynatmadan önce uyarılması için iki dosya var — her basım için bir tane — ve bu vitrin o dosyaların içindekileri saymak yerine kendilerini ölçüyor.</p>
+<h2>Ne çıktı</h2>
+<dl class="facts">
+<dt>İngilizce basım için not</dt><dd>13</dd>
+<dt>Türkçe basım için not</dt><dd>21</dd>
+<dt>Ölçüt</dt><dd>bu yapıda sayıldığı hâliyle <code>docs/PRODUCTION-GUARD-NOTES.md</code> ve Türkçe ikizindeki her ikinci düzey başlık</dd>
+</dl>
+<p>İki dosyadan uzun olanı Türkçesi ve nedenini kendisi söylüyor: Türkçe bir editöre İngilizcenin asla sunamayacağı düzeltmeler sunar — düzeltilecek bir işaret, kurallılaştırılacak bir ek, tamamlanacak bir virgül, yerlileştirilecek yabancı görünüşlü bir kelime. Notların her biri bitmiş gövde üzerinde bir sayımla saptandı ve sayıyı taşıyor; böylece sonraki bir el ona inanmak yerine sayımı yeniden koşturabilir.</p>
+<h2>Dosya yazıldığı ellere ulaşmadı</h2>
+<p>Notlar, bir notu koruduğu parçayla eşleştiren bir uzuv aracılığıyla doğrulayıcıya veriliyor. Uzuv hikâyenin başlığı üzerinden eşleştiriyordu, oysa notlar evlerini düz yazıyla adlandırıyor — <em>birinci hikâye</em>, <em>elli sekizinci hikâye</em>, <em>eşlikçinin maddesi</em>. Yalnızca iki not tesadüfen bir başlık basıyor. Gerisi sessizlik olarak ulaştı.</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>2 hits and 60 misses across sixty-two briefs.</strong> The limb matched a note by the story’s TITLE and the notes name their homes in PROSE — <em>“story one”</em>, <em>“story fifty-eight”</em>, <em>the companion’s entry</em>. Only two notes happen to print a title</p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md, V-66 satırı. Her not artık koruduğu parçaların görünmez bir dizinini taşıyor; dizin, notun kendi ifadesinden değil sayımdan türetildi. Teslim altmışta ikiden on ikide on ikiye çıktı.</p></blockquote>
+<p>Genişletildikten sonra aynı eşleştirici, iki notu onları taşımayan hikâyelere teslim etti. Kayıt bunu ilk hatanın yanına işliyor ve serginin uyduğu çizgiyi çekiyor: ulaşmaması gereken yere ulaşan bir eşleştirici, ulaşması gerekene ulaşamayanla aynı hatadır; ikisi de eşleştiriciyi okuyarak bulundu.</p>
+<h2>Bu sitenin yaptığı</h2>
+<p>Bir web dizgicisinin refleksi bu özelliklerin hepsini yok eder; o yüzden refleks hiç kurulmadı. Yapıcı kitabın metnine tam olarak tek bir dönüşüm uyguluyor — basılı basımın kendi dizgicisini, <code>build/book.py</code>’den kopyalayarak değil ödünç alarak — ve üç karakteri kaçırıyor. Normalleştirici yok, tırnak geçişi yok, gövde üzerinde denetleyici yok; bir kontrolü kaldırmadan birini ekleyecek yer de yok.</p>
+<p>İki kalıcı kontrol bunu üretilen sayfalara taşıyor. Biri, bir dizgenin harf durumunu katlayan biçem özelliğinin sitenin gönderdiği hiçbir dosyada — biçem dosyası dahil — geçmediğini doğruluyor, çünkü Türkçe başlıkta o katlama noktasız bir I basar. Öteki, basılı basımın kendi dizgi kontrolünü web’e taşıyor ve bir sayfaya düz tırnak ya da kesme ulaşırsa yapıyı durduruyor.</p>
+<p class="faint">O özellik <code>build/site_lib.py</code> içinde adlandırılıyor ve burada bilerek basılmıyor. Serginin karşılaştığı ikinci öz göndergeli bekçi bu: yasaklı dizgeyi adlandıran bir sayfa, onu adlandırdığı satırda, onu yasaklayan kontrolden kalır. Ötekisi sergi girişinde: çözücü kalıplar sayımı, taradığı kalıpları basamıyor. İkisi de bu sayfaları ilk yazan yapıda sitenin kendi uzuvlarınca yakalandı ve sayfayı geçirmek için hiçbir kontrol genişletilmedi.</p>
+<p class="quiet">Bu sayfada olmayan şey: bunların hangi özellikler olduğu. Notlar sonraki bir el onları düzeltmesin diye var; herkese açık bir sayfadaki bir listeleri ise başka bir okuru olan başka bir belge olurdu.</p>
+<hr>
+<p class="faint" style="display:flex;flex-wrap:wrap;gap:0.4rem 1.6rem"><a href="../../../tr/method/a-taller-wall/">Önceki · II</a>
+<a href="../../../tr/method/">Sergi</a>
+<a href="../../../tr/method/the-ratio/">IV · Sonraki</a></p>
+</main>
+<div class="foot"><p>© 2026 Hulki Okan Tabak. Tüm hakları saklıdır.</p></div>
+</body>
+</html>

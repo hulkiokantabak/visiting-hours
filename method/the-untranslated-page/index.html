@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The page that is not translated · Visiting Hours</title>
+<link rel="stylesheet" href="../../site.css">
+<link rel="alternate" hreflang="tr" href="../../tr/method/the-untranslated-page/">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the text</a>
+<nav class="topnav" aria-label="Visiting Hours">
+<a class="brand" href="../../">Visiting Hours</a>
+<ul>
+<li><a href="../../read/">Read</a></li>
+<li><a href="../../guide/">Guide</a></li>
+<li><a href="../../method/" aria-current="true">Method</a></li>
+<li><a href="../../about/">About</a></li>
+</ul>
+<a class="switch" href="../../tr/method/the-untranslated-page/" lang="tr" hreflang="tr">TÜRKÇE</a>
+</nav>
+<main id="content">
+<p class="faint">Vitrine I</p>
+<h1>The page that is not translated</h1>
+<p class="quiet">One piece of the sixty is carried into the other edition unchanged. The book refuses to translate it, and the refusal is defended inside the fiction rather than in a note. This vitrine records the refusal. It does not record what the page says.</p>
+<h2>How the page is found</h2>
+<p>It is found, not remembered. The site reads both trees with each tree’s own body reader — the English from <code>build/book.py</code>, the Turkish from <code>tools/vh_tr_checks.py</code>, both borrowed rather than copied — and looks for the piece whose two bodies are identical. That is what <em>carried untranslated</em> means, so the site finds the page the way the law defines it. If a second piece ever answered to that criterion the build stops instead of guessing.</p>
+<h2>What came back</h2>
+<dl class="facts">
+<dt>Pieces whose two bodies are identical</dt><dd>1 of 60</dd>
+<dt>The piece</dt><dd>DS-038 · <span lang="eo">Sub la Kuranta Akvo</span></dd>
+<dt>Its seat</dt><dd>13 of 60 — the first seat of Part II</dd>
+<dt>The body</dt><dd>185 words in 3 paragraphs, 1,070 bytes</dd>
+<dt>The two files</dt><dd>byte-identical whole, 3,102 bytes each — front matter included</dd>
+</dl>
+<h2>What the site does with it</h2>
+<p>The page is shown. It is marked <code>lang="eo"</code>, so a screen reader is told which language it is in rather than made to read Esperanto as English. There is no gloss, no note, no tooltip, no translation toggle and no link to one. This site holds no translation helper for that page — deliberately: there is nothing here to reach for. Standing check S9 names the piece it found and asserts the page carries no gloss in either edition.</p>
+<h2>And the guard on the rule was blind</h2>
+<p>The check that guards this rule compared the two bodies as the builders read them — through Python’s universal newlines, which fold a carriage return away before anything is hashed. A divergence of twenty-five bytes was simulated and the check reported PASS, in the one limb whose entire subject is bytes, in a repository that warns about line endings on nearly every commit. The files had not drifted. The limb could not have seen it if they had.</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>it compared <code>body_of()</code> output, which opens with Python universal newlines and silently folds CRLF to LF before hashing.</strong> Simulated: a 25-byte CRLF divergence <strong>reports PASS</strong> — in the one limb whose entire subject is bytes, in a repo where git warns about CRLF conversion on nearly every commit</p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md, row V-78. Found by reading the open call, not the output. Raw bytes now decide, and the folded comparison is kept as a second limb so the report can name which kind of divergence it found.</p></blockquote>
+<hr>
+<p class="faint" style="display:flex;flex-wrap:wrap;gap:0.4rem 1.6rem"><a href="../../method/">The pavilion</a>
+<a href="../../method/a-taller-wall/">II · Next</a></p>
+</main>
+<div class="foot"><p>Copyright © 2026 Hulki Okan Tabak. All rights reserved.</p></div>
+</body>
+</html>

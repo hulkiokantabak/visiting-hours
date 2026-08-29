@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çevrilmeyen sayfa · Ziyaret Saatleri</title>
+<link rel="stylesheet" href="../../../site.css">
+<link rel="alternate" hreflang="en" href="../../../method/the-untranslated-page/">
+</head>
+<body>
+<a class="skip" href="#content">Metne geç</a>
+<nav class="topnav" aria-label="Ziyaret Saatleri">
+<a class="brand" href="../../../">Ziyaret Saatleri</a>
+<ul>
+<li><a href="../../../tr/read/">Oku</a></li>
+<li><a href="../../../guide/" hreflang="en">Rehber</a></li>
+<li><a href="../../../tr/method/" aria-current="true">Yöntem</a></li>
+<li><a href="../../../tr/about/">Hakkında</a></li>
+</ul>
+<a class="switch" href="../../../method/the-untranslated-page/" lang="en" hreflang="en">ENGLISH</a>
+</nav>
+<main id="content">
+<p class="faint">Vitrin I</p>
+<h1>Çevrilmeyen sayfa</h1>
+<p class="quiet">Altmış parçadan biri öteki basıma değiştirilmeden taşınıyor. Kitap onu çevirmeyi reddediyor ve bu ret, bir dipnotta değil, kurgunun içinde savunuluyor. Bu vitrin reddi kaydeder. Sayfanın ne dediğini kaydetmez.</p>
+<h2>Sayfa nasıl bulunuyor</h2>
+<p>Hatırlanmıyor, bulunuyor. Site iki ağacı da kendi gövde okuyucusuyla okuyor — İngilizceyi <code>build/book.py</code> ile, Türkçeyi <code>tools/vh_tr_checks.py</code> ile, ikisi de kopyalanarak değil ödünç alınarak — ve iki gövdesi birebir aynı olan parçayı arıyor. <em>Çevrilmeden taşınmak</em> bu demek olduğu için, site sayfayı kuralın onu tanımladığı yoldan buluyor. İkinci bir parça bu ölçüte uyacak olsa, yapı tahmin etmek yerine durur.</p>
+<h2>Ne çıktı</h2>
+<dl class="facts">
+<dt>İki gövdesi birebir aynı olan parça</dt><dd>60 parçadan 1’i</dd>
+<dt>Parça</dt><dd>DS-038 · <span lang="eo">Sub la Kuranta Akvo</span></dd>
+<dt>Yeri</dt><dd>60 parçanın 13. sırası — II. Bölümün ilk sırası</dd>
+<dt>Gövde</dt><dd>3 paragrafta 185 kelime, 1.070 bayt</dd>
+<dt>İki dosya</dt><dd>baştan sona bayt bayt aynı, her biri 3.102 bayt — ön bilgi dahil</dd>
+</dl>
+<h2>Sitenin onunla yaptığı</h2>
+<p>Sayfa gösteriliyor. <code>lang="eo"</code> olarak işaretleniyor, böylece ekran okuyucuya hangi dilde olduğu söyleniyor; Esperantoyu İngilizce gibi okumak zorunda kalmıyor. Açıklama yok, dipnot yok, ipucu balonu yok, çeviri düğmesi yok, bir çeviriye bağlantı da yok. Bu sitede o sayfa için bir çeviri yardımcısı bulunmuyor — bilerek: uzanılacak bir şey yok. S9 kontrolü bulduğu parçayı adlandırıyor ve sayfanın iki basımda da açıklama taşımadığını doğruluyor.</p>
+<h2>Ve kuralın bekçisi kördü</h2>
+<p>Bu kuralı koruyan kontrol, iki gövdeyi yapıcıların okuduğu gibi karşılaştırıyordu — Python’ın evrensel satır sonları üzerinden, ki bunlar bir satır başını daha özet alınmadan siliyor. Yirmi beş baytlık bir ayrışma benzetildi ve kontrol PASS bildirdi; hem de bütün konusu baytlar olan tek uzuvda, satır sonları için neredeyse her işlemede uyarı veren bir depoda. Dosyalar ayrışmamıştı. Ayrışsalardı uzuv bunu göremezdi.</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>it compared <code>body_of()</code> output, which opens with Python universal newlines and silently folds CRLF to LF before hashing.</strong> Simulated: a 25-byte CRLF divergence <strong>reports PASS</strong> — in the one limb whose entire subject is bytes, in a repo where git warns about CRLF conversion on nearly every commit</p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md, V-78 satırı. Çıktıyı değil, dosya açma çağrısını okuyarak bulundu. Artık ham baytlar karar veriyor; katlanmış karşılaştırma ikinci uzuv olarak tutuluyor ki rapor hangi tür ayrışmayı bulduğunu söyleyebilsin.</p></blockquote>
+<hr>
+<p class="faint" style="display:flex;flex-wrap:wrap;gap:0.4rem 1.6rem"><a href="../../../tr/method/">Sergi</a>
+<a href="../../../tr/method/a-taller-wall/">II · Sonraki</a></p>
+</main>
+<div class="foot"><p>© 2026 Hulki Okan Tabak. Tüm hakları saklıdır.</p></div>
+</body>
+</html>

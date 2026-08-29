@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What must not be corrected · Visiting Hours</title>
+<link rel="stylesheet" href="../../site.css">
+<link rel="alternate" hreflang="tr" href="../../tr/method/what-must-not-be-corrected/">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the text</a>
+<nav class="topnav" aria-label="Visiting Hours">
+<a class="brand" href="../../">Visiting Hours</a>
+<ul>
+<li><a href="../../read/">Read</a></li>
+<li><a href="../../guide/">Guide</a></li>
+<li><a href="../../method/" aria-current="true">Method</a></li>
+<li><a href="../../about/">About</a></li>
+</ul>
+<a class="switch" href="../../tr/method/what-must-not-be-corrected/" lang="tr" hreflang="tr">TÜRKÇE</a>
+</nav>
+<main id="content">
+<p class="faint">Vitrine III</p>
+<h1>What must not be corrected</h1>
+<p class="quiet">A proofreader, a typesetter, a copy editor or a later hand will meet a number of things in this book and reach for a pencil. Each of them is deliberate. Two files exist so that the hand which will not ask is told before it moves — one for each edition — and this vitrine measures those files rather than listing what is in them.</p>
+<h2>What came back</h2>
+<dl class="facts">
+<dt>Notes for the English edition</dt><dd>13</dd>
+<dt>Notes for the Turkish edition</dt><dd>21</dd>
+<dt>The criterion</dt><dd>a second-level heading in <code>docs/PRODUCTION-GUARD-NOTES.md</code> and in its Turkish twin, counted at this build</dd>
+</dl>
+<p>The Turkish file is the longer of the two, and it says why: Turkish offers a copy editor corrections the English never could — a diacritic to fix, a case ending to regularise, a missing comma to supply, a foreign-looking word to naturalise. Each of its notes was established by a census of the finished body and carries the count, so a later hand can re-run it rather than believe it.</p>
+<h2>The file did not reach the hands it was written for</h2>
+<p>The notes are handed to a verifier through a limb that matches a note to the piece it protects. The limb matched on the story’s title, and the notes name their homes in prose — <em>story one</em>, <em>story fifty-eight</em>, <em>the companion’s entry</em>. Two notes happen to print a title. The rest arrived as silence.</p>
+<blockquote lang="en" style="margin:1.7rem 0;padding:0.1rem 0 0.1rem 1.15rem;border-left:2px solid var(--rule);color:var(--ink-soft)"><p style="margin:0"><strong>2 hits and 60 misses across sixty-two briefs.</strong> The limb matched a note by the story’s TITLE and the notes name their homes in PROSE — <em>“story one”</em>, <em>“story fifty-eight”</em>, <em>the companion’s entry</em>. Only two notes happen to print a title</p><p class="faint" style="margin:0.45rem 0 0">docs/VERIFIER-LOG.md, row V-66. Each note now carries an invisible index of the pieces it protects, derived by census and not from the note’s own wording; delivery went from two of sixty to twelve of twelve.</p></blockquote>
+<p>Widened, the same matcher then delivered two notes to stories that do not carry them. The log files that beside the first fault and draws the line the pavilion works to: a matcher that reaches what it should not is the same fault as one that cannot reach what it should, and both were found by reading the matcher.</p>
+<h2>What this site does about it</h2>
+<p>A web typographer’s reflex destroys every one of those features, so the reflex is not installed. The builder applies exactly one transform to the book’s text — the print edition’s own typographer, borrowed from <code>build/book.py</code> rather than copied — and escapes three characters. There is no normaliser, no quote pass, no linter over the body, and there is no place to add one without removing a check.</p>
+<p>Two standing checks carry that into the built pages. One asserts that the stylesheet property which folds a string’s case occurs in nothing the site ships, stylesheet included, because on the Turkish title that fold prints a dotless I. The other carries the print edition’s own typographic check to the web and fails the build if a straight quote or apostrophe reaches a page.</p>
+<p class="faint">That property is named in <code>build/site_lib.py</code> and is deliberately not printed here. It is the second self-referential guard the pavilion met: a page that names the banned string fails the check that bans it, on the line that names it. The other is on the pavilion floor, where the census of resolving formulas cannot print the formulas it scans for. Both were caught by the site’s own limbs at the build that first wrote these pages, and neither check was widened to let the page through.</p>
+<p class="quiet">What is not on this page: which features they are. The notes exist so that a later hand does not correct them, and a list of them on a public page would be a different document with a different reader.</p>
+<hr>
+<p class="faint" style="display:flex;flex-wrap:wrap;gap:0.4rem 1.6rem"><a href="../../method/a-taller-wall/">Previous · II</a>
+<a href="../../method/">The pavilion</a>
+<a href="../../method/the-ratio/">IV · Next</a></p>
+</main>
+<div class="foot"><p>Copyright © 2026 Hulki Okan Tabak. All rights reserved.</p></div>
+</body>
+</html>
