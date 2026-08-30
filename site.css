@@ -12,7 +12,7 @@
   --ink-soft:      #56514b;
   /* --ink-faint and --accent-soft were moved on 2026-08-30 by the web panel, on a MEASUREMENT and
      not a preference: at their ratified values they set small text below the WCAG AA floor.
-     The values below are the NEAREST point on each colour's own lightness axis that clears 4.5:1
+     The values below are the NEAREST point on each color's own lightness axis that clears 4.5:1
      — hue and saturation held, so the palette's relations are unchanged. The arithmetic and the
      twenty-one text roles that depend on it are in the panel note above CSS. Check S13 re-runs
      the ratios at every build, so this can never drift back silently. */
@@ -293,7 +293,7 @@ body.field main {
    THE FIRST RULE HERE IS A BUG FIX, NOT A STYLE. A reader whose system is set to dark prints a
    dark page: the browser keeps the dark palette through the print pipeline, the printer drops the
    near-black background as it always does, and the light ink lands on white paper as almost
-   nothing. The light values are therefore RESTATED here, where no colour scheme can reach them.
+   nothing. The light values are therefore RESTATED here, where no color scheme can reach them.
    They are the same six values as :root above; they are not a second palette.
 
    NOTHING IS ADDED TO THE PAGE. In particular no `a::after { content: attr(href) }`: this site

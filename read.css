@@ -189,7 +189,7 @@ h1.form-head { font-size: 1.15rem; letter-spacing: 0.03em; line-height: 1.35; }
 .jump-list .contents .n { min-width: 1.6rem; text-align: right; color: var(--ink-faint); }
 .jump-list a { text-decoration: none; }
 .jump-list a:hover { text-decoration: underline; }
-/* The seat the reader is in. Marked aria-current="page" as well, so it is not colour alone. */
+/* The seat the reader is in. Marked aria-current="page" as well, so it is not color alone. */
 .jump-list li.here > .t > a { color: var(--accent); }
 .jump-all { margin: 0 0 0.6rem; }
 
