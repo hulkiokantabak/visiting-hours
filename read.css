@@ -159,6 +159,57 @@ h1.form-head { font-size: 1.15rem; letter-spacing: 0.03em; line-height: 1.35; }
 .seq a:hover { text-decoration: underline; }
 .seq .next { margin-left: auto; }
 
+/* ------------------------------------------------------------------------------------------
+   THE JUMP NAVIGATOR — every story reachable from inside any story.
+   Added 2026-08-30 at the author's word: previous and next alone made a sixty-seat book a
+   corridor with two doors.
+
+   NO SCRIPT ANYWHERE. A native <details> is the whole mechanism, and check S8 asserts the site
+   carries no script at all. Closed by default so it never pushes the text down; on a wide screen
+   the rail is lifted out of the flow and made sticky, so a reader can leave it open beside the
+   text. It works with JS off because there is nothing to switch off.
+   ------------------------------------------------------------------------------------------ */
+.jump { margin: 0 0 2.2rem; font-size: 0.92rem; }
+.jump > summary {
+  cursor: pointer;
+  color: var(--ink-faint);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--rule);
+  list-style: none;
+}
+.jump > summary::-webkit-details-marker { display: none; }
+.jump > summary::after { content: " ▾"; }
+.jump[open] > summary::after { content: " ▴"; }
+.jump > summary:hover { color: var(--ink); }
+.jump > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.jump-list { padding: 1rem 0 0.4rem; }
+.jump-list .part { font-size: 0.78rem; margin: 1.1rem 0 0.4rem; color: var(--ink-faint); }
+.jump-list .contents { list-style: none; margin: 0; padding: 0; }
+.jump-list .contents li { display: flex; gap: 0.6rem; padding: 0.12rem 0; }
+.jump-list .contents .n { min-width: 1.6rem; text-align: right; color: var(--ink-faint); }
+.jump-list a { text-decoration: none; }
+.jump-list a:hover { text-decoration: underline; }
+/* The seat the reader is in. Marked aria-current="page" as well, so it is not colour alone. */
+.jump-list li.here > .t > a { color: var(--accent); }
+.jump-all { margin: 0 0 0.6rem; }
+
+@media (min-width: 1180px) {
+  /* Wide enough to hold a rail beside the measure without crowding it. The text column does not
+     move: the rail is taken out of the flow, so the page a reader reads is the page they read
+     before this existed. */
+  .jump {
+    position: fixed;
+    top: 5.2rem;
+    left: max(1rem, calc(50vw - 34rem));
+    width: 15rem;
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    margin: 0;
+    font-size: 0.82rem;
+  }
+  .jump-list .contents li { padding: 0.06rem 0; }
+}
+
 /* R-24 / guard note 5a: the untranslated page is set ROMAN, like any story. Nothing here
    italicises it, and nothing may. */
 [lang="eo"] { font-style: normal; }

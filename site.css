@@ -227,6 +227,15 @@ code {
   color: var(--ink-faint);
   font-size: 0.96rem;
 }
+/* The year, ADDED 2026-08-30 at the author's word. Vera's cover stacks four cities and their
+   years; this book is one unnamed city, so it carries the year alone. Derived from the book's own
+   "First edition, YYYY", never typed. */
+.cover-year {
+  margin: 1.5rem 0 0;
+  color: var(--ink-faint);
+  font-size: 0.96rem;
+  letter-spacing: 0.06em;
+}
 .doors {
   margin-top: 2.9rem;
   display: flex;
