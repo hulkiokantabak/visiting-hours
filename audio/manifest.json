@@ -1,7 +1,7 @@
 {
  "title": "VISITING HOURS · the voice edition",
  "note": "A floor, not the edition. The page is primary.",
- "built": "2026-08-30T13:12:36",
+ "built": "2026-08-30T16:32:53",
  "voices": {
   "en": "en-US-AvaNeural",
   "tr": "tr-TR-EmelNeural"
@@ -130,10 +130,10 @@
    "spoken_units": 12,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 345.43,
-   "bytes": 1382157,
-   "sha256": "f7919a918aa270a57db7eff874cf5f03db57228c25c5f88b94769dba5aca3e69",
-   "built": "2026-08-30T01:23:30",
+   "seconds": 357.92,
+   "bytes": 1432173,
+   "sha256": "a1e2d3ed32f190c832b232fa3a0864a2394301d3e2f5bb3c791e1288ba734488",
+   "built": "2026-08-30T14:06:39",
    "held_ticks": 0
   },
   {
@@ -738,10 +738,10 @@
    "spoken_units": 19,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 354.21,
-   "bytes": 1417293,
-   "sha256": "f367bfced739b36481487eb4a22ca764c1c750328c91a9879ce83c96adeed7c8",
-   "built": "2026-08-30T01:24:50",
+   "seconds": 363.33,
+   "bytes": 1453773,
+   "sha256": "7c999c34c0915dc683c5d0b2c8e27dfb15dc814b24ae28053abb5d3989246da1",
+   "built": "2026-08-30T14:05:31",
    "held_ticks": 0
   },
   {
@@ -1004,10 +1004,10 @@
    "spoken_units": 25,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 426.13,
-   "bytes": 1705005,
-   "sha256": "3a2a227eaa85824d11831d8c60b25bf537b096264c78418709f9700debc444c1",
-   "built": "2026-08-30T01:23:42",
+   "seconds": 438.34,
+   "bytes": 1753869,
+   "sha256": "26062140569926689c6f8a5cfe2bbbc7ccbc2dc4597dd268df8366ebe0e71a99",
+   "built": "2026-08-30T14:05:07",
    "held_ticks": 0
   },
   {
@@ -1061,10 +1061,10 @@
    "spoken_units": 25,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 436.18,
-   "bytes": 1745229,
-   "sha256": "93f1c9a059b91edff74fac22714f0d6134b3966beeab20de80bc8147ddb62072",
-   "built": "2026-08-30T01:25:46",
+   "seconds": 445.62,
+   "bytes": 1782957,
+   "sha256": "fb692c97174d35846d60ada7ea5229cde44fad3542daeffc9ba2c8d8b1e1464d",
+   "built": "2026-08-30T14:05:45",
    "held_ticks": 0
   },
   {
@@ -1137,10 +1137,10 @@
    "spoken_units": 22,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 523.21,
-   "bytes": 2093325,
-   "sha256": "a9037f827d95f4c1e53ec1778aacfe451c1452fa11a9f564bf7da08850379f39",
-   "built": "2026-08-30T01:24:39",
+   "seconds": 524.37,
+   "bytes": 2097933,
+   "sha256": "4bcc69ac384503c9e85bfa07925d46c645aa6e9a47db1291c8a63fa80230b29e",
+   "built": "2026-08-30T14:06:43",
    "held_ticks": 0
   },
   {
@@ -1270,10 +1270,10 @@
    "spoken_units": 12,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 350.04,
-   "bytes": 1400589,
-   "sha256": "895cfa8c9d2a48dafa0882bcc038dc24d7a43e69500b7927215eb0e04b0c1a36",
-   "built": "2026-08-30T01:34:41",
+   "seconds": 360.84,
+   "bytes": 1443789,
+   "sha256": "815c125e9a8c8dd95523851b7fee7fbbe153e1b6c7ee1e7394900179f9a712ba",
+   "built": "2026-08-30T16:24:43",
    "held_ticks": 0
   },
   {
@@ -1878,10 +1878,10 @@
    "spoken_units": 19,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 367.64,
-   "bytes": 1471053,
-   "sha256": "e6e8f876a4b00f30892b7f8dd42c892a95bd7e5b824c2aa4a02d4c33f3ae85cb",
-   "built": "2026-08-30T01:36:07",
+   "seconds": 379.29,
+   "bytes": 1517613,
+   "sha256": "897b750597b5a07848273ee768c71ad3ffe2b97cc35dfb6a8f947cb1ae3662ec",
+   "built": "2026-08-30T16:25:13",
    "held_ticks": 0
   },
   {
@@ -2144,10 +2144,10 @@
    "spoken_units": 25,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 444.59,
-   "bytes": 1778829,
-   "sha256": "7761421e9fb65f1dab32ba9469f9a09cb46a09103053897516bec130552499ae",
-   "built": "2026-08-30T01:34:55",
+   "seconds": 459.71,
+   "bytes": 1839309,
+   "sha256": "79034e1306b7392d664be6cba3e63025bdfa6ce182d5d8b0506aec82ef011f16",
+   "built": "2026-08-30T16:24:55",
    "held_ticks": 0
   },
   {
@@ -2201,10 +2201,10 @@
    "spoken_units": 25,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 443.67,
-   "bytes": 1775181,
-   "sha256": "f446c2ac64c3a8941e4e9df15db1baed8d14695f6e173f5b04cd8496e64b316b",
-   "built": "2026-08-30T01:37:12",
+   "seconds": 453.35,
+   "bytes": 1813869,
+   "sha256": "9edd532fdbfecab7f1ab32844f86fb37dd67b3d56b431be7c8722ce51b513ed6",
+   "built": "2026-08-30T16:25:25",
    "held_ticks": 0
   },
   {
@@ -2277,10 +2277,10 @@
    "spoken_units": 22,
    "held_glyphs": 0,
    "mute_lines": 0,
-   "seconds": 506.36,
-   "bytes": 2025933,
-   "sha256": "bf63fdcbaf4e32eb48b9fecb6c4ee06b912ba45cc8afc829bd6f00ccbf03f99a",
-   "built": "2026-08-30T01:35:57",
+   "seconds": 507.7,
+   "bytes": 2031309,
+   "sha256": "ba9259034b2eb26cdfc1a00f6d2e8a5f547bab715224a17c26baa28d5443209e",
+   "built": "2026-08-30T16:25:05",
    "held_ticks": 0
   },
   {
@@ -2324,8 +2324,8 @@
  ],
  "totals": {
   "pieces": 120,
-  "seconds": 37504.1,
-  "bytes": 150073464,
+  "seconds": 37597.2,
+  "bytes": 150445464,
   "missing": 0
  }
 }
