@@ -1,6 +1,8 @@
 /* Current edition: preserve the established reading design and add usable downloads. */
 body{font-size:1.125rem}
 .topnav a{font-size:1rem}
+/* Give navigation text a real hit box; inline prose links keep their line flow. */
+.topnav a,.contents a{display:inline-block;min-height:24px}
 .edition-tools{display:flex;flex-wrap:wrap;gap:.8rem 1.8rem;padding:1rem 0 1.5rem;border-bottom:1px solid var(--rule);margin-bottom:2rem}
 .file-meta{display:block;font-size:.875rem;color:var(--ink-soft)}
 .edition-doors{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 3rem;margin:2.2rem 0}
@@ -47,6 +49,20 @@ body{font-size:1.125rem}
 .listening-contents li{margin:.7rem 0}
 .jump,.jump-list .part{font-size:.95rem}
 .jump-list a{line-height:1.5}
+.jump-list a[aria-current="page"]{font-weight:700;text-decoration:underline}
 @media(min-width:1180px){.jump{font-size:.9rem;width:14.5rem;left:max(1rem,calc(50vw - 36rem))}}
 @media(max-width:700px){.topnav{position:relative;gap:.6rem;padding:1rem}.topnav .brand{width:100%}.topnav ul{gap:.65rem 1rem}.topnav .switch{margin-left:auto}.guide .guide-links{columns:1}main{padding-top:2rem}.signatures{gap:.5rem;font-size:.875rem}.cover{padding-top:2rem;min-height:80vh}}
-@media print{.edition-tools,.voice,.guide-book-link{display:none}.figure-visual{break-inside:avoid}.guide figure{break-before:page}.final-field{margin-top:35vh}}
+@media(max-width:360px){.topnav ul{column-gap:.4rem}}
+@media print{
+  /* Navigation is useful on screen, but an expanded story list is not book text. */
+  .edition-tools,.voice,.guide-book-link,.jump,.seq{display:none}
+  .figure-visual{break-inside:avoid}
+  .guide figure{break-before:page}
+  /* Paper cannot expose columns by scrolling; let cell text wrap to the page. */
+  .guide .table{overflow:visible}
+  .guide table{min-width:0}
+  .guide th,.guide td{overflow-wrap:anywhere}
+  .registration-row,.signatures{break-inside:avoid}
+  .signatures+.signatures{break-before:avoid}
+  .final-field{margin-top:35vh}
+}
