@@ -1,30 +1,34 @@
 [
   {
     "role": "book-en",
-    "source": "exports/current/VISITING-HOURS-ASTRA-REVISION-30.pdf",
+    "source": "publishing/edition-2026-09-09/exports/VisitingHoursEN_interior.pdf",
     "file": "downloads/visiting-hours-english.pdf",
-    "sha256": "c66127f9b2c1b8e5bb88157d66935b963703c512d87cd1ab9e44823a2cf33589",
-    "pages": 117
+    "sha256": "5d7652705f72ed66b7e150408aa8f6542b1ab8fbc4e0121457dc4a4af01915cc",
+    "pages": 119,
+    "bytes": 565261
   },
   {
     "role": "book-tr",
-    "source": "translation/current/exports/ZIYARET-SAATLERI-TURKCE-ENGLISH30.pdf",
+    "source": "publishing/edition-2026-09-09/exports/ZiyaretSaatleriTR_interior.pdf",
     "file": "downloads/ziyaret-saatleri-turkce.pdf",
-    "sha256": "9b161f612ef8fcdf334840c9ba1524925aabf5d2f7d536b9a5e5c27c7ff77795",
-    "pages": 123
+    "sha256": "86da5d95a9ccc26fd773340a1efb281408b49c9b778f47b991a6dadd3236ffbf",
+    "pages": 125,
+    "bytes": 750463
   },
   {
     "role": "guide-en",
     "source": "exports/current/CITY-GUIDE-EN-landscape-FINAL-2026-09-08.pdf",
     "file": "downloads/city-guide-english-landscape.pdf",
     "sha256": "701c09231d9912c85eaf6d2698417f77857e6480babf99d1da8f9b1722b6ff05",
-    "pages": 206
+    "pages": 206,
+    "bytes": 596869
   },
   {
     "role": "guide-tr",
     "source": "exports/current/SEHIR-REHBERI-TR-landscape-FINAL-2026-09-08.pdf",
     "file": "downloads/sehir-rehberi-turkce-yatay.pdf",
     "sha256": "8dfac771280f92e07d66bf43addbab6ccefb1d9f2ba555ae28f701a447f496c9",
-    "pages": 206
+    "pages": 206,
+    "bytes": 639333
   }
 ]
