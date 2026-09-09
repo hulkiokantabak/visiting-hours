@@ -1,0 +1,30 @@
+[
+  {
+    "role": "book-en",
+    "source": "exports/current/VISITING-HOURS-ASTRA-REVISION-30.pdf",
+    "file": "downloads/visiting-hours-english.pdf",
+    "sha256": "c66127f9b2c1b8e5bb88157d66935b963703c512d87cd1ab9e44823a2cf33589",
+    "pages": 117
+  },
+  {
+    "role": "book-tr",
+    "source": "translation/current/exports/ZIYARET-SAATLERI-TURKCE-ENGLISH30.pdf",
+    "file": "downloads/ziyaret-saatleri-turkce.pdf",
+    "sha256": "9b161f612ef8fcdf334840c9ba1524925aabf5d2f7d536b9a5e5c27c7ff77795",
+    "pages": 123
+  },
+  {
+    "role": "guide-en",
+    "source": "exports/current/CITY-GUIDE-EN-landscape-FINAL-2026-09-08.pdf",
+    "file": "downloads/city-guide-english-landscape.pdf",
+    "sha256": "701c09231d9912c85eaf6d2698417f77857e6480babf99d1da8f9b1722b6ff05",
+    "pages": 206
+  },
+  {
+    "role": "guide-tr",
+    "source": "exports/current/SEHIR-REHBERI-TR-landscape-FINAL-2026-09-08.pdf",
+    "file": "downloads/sehir-rehberi-turkce-yatay.pdf",
+    "sha256": "8dfac771280f92e07d66bf43addbab6ccefb1d9f2ba555ae28f701a447f496c9",
+    "pages": 206
+  }
+]
