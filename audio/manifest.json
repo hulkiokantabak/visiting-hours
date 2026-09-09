@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "complete",
   "errors": [],
-  "jobs_sha256": "4325f1e40d9f387a54aa31731fd6ea37b1e644da36c43ba3bff9b47a82c7cbde",
+  "jobs_sha256": "e1bff054430976b6a6e5a33ba333ee221db9983ecd9c619d42450c43c46353bc",
   "selected_keys": [
     "en-PROLOGUE",
     "en-DS-001",
@@ -124,6 +124,7 @@
     "tr-DS-041",
     "tr-DS-061",
     "tr-DS-016",
+    "eo-DS-038",
     "en-guide-001",
     "en-guide-002",
     "en-guide-003",
@@ -2007,6 +2008,21 @@
       "input_units_sha256": "de631180a1d2fbd8b729826d11c2d9329831d629536450a22484522ac3af2f6a",
       "status": "complete",
       "voice": "tr-TR-EmelNeural",
+      "rate": "-8%"
+    },
+    {
+      "key": "eo-DS-038",
+      "lang": "eo",
+      "page": "read/sub-la-kuranta-akvo/",
+      "title": "Sub la Kuranta Akvo",
+      "kind": "book",
+      "file": "eo-DS-038.mp3",
+      "artifact_sha256": "34cb06ec610f1df66432bf44d1a539007ff21d6ffdecaab90cdd83e4f97311e1",
+      "bytes": 352941,
+      "duration_seconds": 88.224,
+      "input_units_sha256": "6c9e47509b656989a8eb392f8c3062f8e3648f3501f81f9b95f9e9e70d0a1241",
+      "status": "complete",
+      "voice": "en-US-AvaMultilingualNeural",
       "rate": "-8%"
     },
     {
