@@ -1,34 +1,34 @@
 [
   {
     "role": "book-en",
-    "source": "publishing/edition-2026-09-09/exports/VisitingHoursEN_interior.pdf",
+    "source": "publishing/edition-2026-09-09/exports/VisitingHoursEN_withphotograph.pdf",
     "file": "downloads/visiting-hours-english.pdf",
-    "sha256": "8606bfd558f8e0a5028caa577d371d53402fdb0d8ddee36a530907b11da5317a",
+    "sha256": "d327295c8bd844557041afcd3f19b8d54944be21c8ad9b9d603985913452839f",
     "pages": 119,
-    "bytes": 565517
+    "bytes": 11528451
   },
   {
     "role": "book-tr",
-    "source": "publishing/edition-2026-09-09/exports/ZiyaretSaatleriTR_interior.pdf",
+    "source": "publishing/edition-2026-09-09/exports/ZiyaretSaatleriTR_withphotograph.pdf",
     "file": "downloads/ziyaret-saatleri-turkce.pdf",
-    "sha256": "a7103fc711a6c1f2bcd23cff52d63d00498c443eea8a41cb5beee486af28e752",
+    "sha256": "686267b91185a6bcc8142bbaca4654bf34516795877682d68d0f9943106e243c",
     "pages": 125,
-    "bytes": 750601
+    "bytes": 11715966
   },
   {
     "role": "guide-en",
-    "source": "exports/current/CITY-GUIDE-EN-landscape-FINAL-2026-09-08.pdf",
+    "source": "publishing/city-guide-edition-2026-09-09/exports/CityGuideEN_withphotograph.pdf",
     "file": "downloads/city-guide-english-landscape.pdf",
-    "sha256": "701c09231d9912c85eaf6d2698417f77857e6480babf99d1da8f9b1722b6ff05",
-    "pages": 206,
-    "bytes": 596869
+    "sha256": "c0102bc97c13113246f86757b2f9ade5031e82732467318ffbf2aecd21ece7ca",
+    "pages": 209,
+    "bytes": 9605589
   },
   {
     "role": "guide-tr",
-    "source": "exports/current/SEHIR-REHBERI-TR-landscape-FINAL-2026-09-08.pdf",
+    "source": "publishing/city-guide-edition-2026-09-09/exports/SehirRehberiTR_withphotograph.pdf",
     "file": "downloads/sehir-rehberi-turkce-yatay.pdf",
-    "sha256": "8dfac771280f92e07d66bf43addbab6ccefb1d9f2ba555ae28f701a447f496c9",
-    "pages": 206,
-    "bytes": 639333
+    "sha256": "dd2463c2376b8fa82e0c39e9bc29f861fba73b846d5c597d3b8dae3ef79ea2df",
+    "pages": 209,
+    "bytes": 9713980
   }
 ]
