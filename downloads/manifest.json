@@ -3,17 +3,17 @@
     "role": "book-en",
     "source": "publishing/edition-2026-09-09/exports/VisitingHoursEN_interior.pdf",
     "file": "downloads/visiting-hours-english.pdf",
-    "sha256": "5d7652705f72ed66b7e150408aa8f6542b1ab8fbc4e0121457dc4a4af01915cc",
+    "sha256": "8606bfd558f8e0a5028caa577d371d53402fdb0d8ddee36a530907b11da5317a",
     "pages": 119,
-    "bytes": 565261
+    "bytes": 565517
   },
   {
     "role": "book-tr",
     "source": "publishing/edition-2026-09-09/exports/ZiyaretSaatleriTR_interior.pdf",
     "file": "downloads/ziyaret-saatleri-turkce.pdf",
-    "sha256": "86da5d95a9ccc26fd773340a1efb281408b49c9b778f47b991a6dadd3236ffbf",
+    "sha256": "a7103fc711a6c1f2bcd23cff52d63d00498c443eea8a41cb5beee486af28e752",
     "pages": 125,
-    "bytes": 750463
+    "bytes": 750601
   },
   {
     "role": "guide-en",

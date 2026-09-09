@@ -163,10 +163,11 @@ h1.form-head { font-size: 1.15rem; letter-spacing: 0.03em; line-height: 1.35; }
    Added 2026-08-30 at the author's word: previous and next alone made a sixty-seat book a
    corridor with two doors.
 
-   NO SCRIPT ANYWHERE. A native <details> is the whole mechanism, and check S8 asserts the site
-   carries no script at all. Closed by default so it never pushes the text down; on a wide screen
+   This story navigator uses native <details> without JavaScript. The current site's separate
+   guide and playback controls use the checked local site-controls.js asset. Closed by default,
+   this navigator never pushes the text down; on a wide screen
    the rail is lifted out of the flow and made sticky, so a reader can leave it open beside the
-   text. It works with JS off because there is nothing to switch off.
+   text. The story navigator remains usable with JavaScript disabled.
    ------------------------------------------------------------------------------------------ */
 .jump { margin: 0 0 2.2rem; font-size: 0.92rem; }
 .jump > summary {

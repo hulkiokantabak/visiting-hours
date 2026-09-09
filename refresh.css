@@ -21,6 +21,10 @@ body{font-size:1.125rem}
 .voice summary{cursor:pointer;font-size:1rem;color:var(--accent)}
 .voice audio{display:block;width:100%;max-width:100%;margin-top:.8rem}
 .audio-note{font-size:.875rem;color:var(--ink-soft);margin:.5rem 0}
+.playback-speed{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;margin-top:.9rem;font-size:1rem}
+.playback-speed[hidden]{display:none}
+.playback-speed select,.guide-menu-close{font:inherit;color:var(--ink);background:var(--ground-raised);border:1px solid var(--ink-soft);border-radius:.2rem;min-height:44px;padding:.35rem .65rem}
+.playback-speed span{flex-basis:100%;font-size:.875rem;color:var(--ink-soft)}
 .registration-row{display:grid;grid-template-columns:1.5rem 1fr;gap:.6rem;margin:1.3rem 0}
 .registration-row small{display:block;font-size:.95rem;color:var(--ink-soft)}
 .blank-rule{display:block;border-bottom:1px solid var(--ink-soft);height:1.5rem}
@@ -29,6 +33,34 @@ body{font-size:1.125rem}
 .form-head{font-family:var(--mono);font-size:1.4rem}
 .final-field{margin-top:35vh}
 .guide main{max-width:64rem}
+.guide-layout{max-width:100rem;margin:0 auto}
+.guide-layout main{min-width:0;width:100%}
+.guide-navigation{font-size:.95rem;line-height:1.45;background:var(--ground);z-index:11;position:sticky;top:0;border-bottom:1px solid var(--rule)}
+.guide-navigation>summary{cursor:pointer;color:var(--accent);padding:.8rem 1.2rem;min-height:48px}
+.guide-panel{background:var(--ground);padding:1rem;display:flex;flex-direction:column;min-height:0}
+.guide-shortcuts{display:flex;flex-direction:column;gap:.35rem;border-bottom:1px solid var(--rule);padding-bottom:.8rem;margin-bottom:.5rem}
+.guide-shortcuts a{min-height:28px;padding:.15rem .35rem}
+.guide-menu-links{overflow-y:auto;overscroll-behavior:contain;min-height:0;position:relative;scrollbar-gutter:stable}
+.guide-menu-links ul{list-style:none;margin:0;padding:0}
+.guide-menu-links a{display:block;padding:.4rem .5rem;min-height:32px;text-decoration:none;border-left:2px solid transparent}
+.guide-menu-links a:hover{text-decoration:underline}
+.guide-navigation a[aria-current="page"]{font-weight:bold;text-decoration:underline;background:var(--ground-raised);border-left:2px solid var(--accent)}
+.guide-menu-close{align-self:flex-start;margin-bottom:.7rem;cursor:pointer}
+.guide-menu-close[hidden]{display:none}
+@media(min-width:1000px){
+  .guide-layout{display:grid;grid-template-columns:16.5rem minmax(0,1fr);align-items:start}
+  .guide-navigation{top:4.2rem;margin:1.5rem 0 0 1rem;border:1px solid var(--rule);height:calc(100vh - 5.7rem);max-height:60rem}
+  .guide-navigation>summary{display:none}
+  .guide-panel{height:calc(100vh - 5.7rem - 2px);max-height:calc(60rem - 2px)}
+  .guide-layout main{padding-top:2.8rem}
+}
+@media(max-width:999px){
+  .guide-navigation[open]{position:fixed;top:0;left:0;width:min(24rem,100%)}
+  .guide-navigation[open]>.guide-panel{position:absolute;top:100%;left:0;width:100%;height:calc(100dvh - 49px);max-height:calc(100vh - 49px);box-shadow:.4rem .5rem 1rem #0003;border:1px solid var(--rule)}
+  .guide-navigation[open]>summary{background:var(--ground-raised)}
+  .guide-layout main{scroll-margin-top:4rem}
+}
+@media(min-width:1000px) and (max-height:26rem){.guide-navigation{top:.5rem;height:calc(100vh - 1rem)}.guide-panel{height:calc(100vh - 1rem - 2px)}}
 .guide figure{margin:3rem 0;padding:1.5rem 0;border-top:1px solid var(--rule)}
 .guide figcaption{font-size:1.3rem;font-weight:bold;margin:1rem 0}
 .figure-visual{display:block;background:#fffefb;border:1px solid var(--rule)}
@@ -55,7 +87,8 @@ body{font-size:1.125rem}
 @media(max-width:360px){.topnav ul{column-gap:.4rem}}
 @media print{
   /* Navigation is useful on screen, but an expanded story list is not book text. */
-  .edition-tools,.voice,.guide-book-link,.jump,.seq{display:none}
+  .edition-tools,.voice,.guide-book-link,.jump,.seq,.guide-navigation{display:none}
+  .guide-layout{display:block}
   .figure-visual{break-inside:avoid}
   .guide figure{break-before:page}
   /* Paper cannot expose columns by scrolling; let cell text wrap to the page. */
